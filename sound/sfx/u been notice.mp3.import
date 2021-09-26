@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/u been notice.mp3-78d7f77918ae7e7f606a5f90e55ca9c1.mp3str"
+
+[deps]
+
+source_file="res://sound/sfx/u been notice.mp3"
+dest_files=[ "res://.import/u been notice.mp3-78d7f77918ae7e7f606a5f90e55ca9c1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
