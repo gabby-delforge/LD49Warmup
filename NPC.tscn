@@ -6,7 +6,7 @@
 [sub_resource type="CircleShape2D" id=1]
 radius = 32.0
 
-[node name="KinematicBody2D" type="KinematicBody2D"]
+[node name="Enemy" type="KinematicBody2D"]
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -15,5 +15,11 @@ position = Vector2( 32, 32 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2( 32, 32 )
 shape = SubResource( 1 )
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2( 64, -32 )
+color = Color( 1, 1, 1, 0.301961 )
+polygon = PoolVector2Array( -8, 32, 24, -72, -32, -96, -88, -80, -56, 32 )
