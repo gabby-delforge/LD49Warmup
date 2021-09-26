@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sneeky snukey Kalm 2.0.mp3-15d454fd35a23767e803df828e1e2c34.mp3str"
+
+[deps]
+
+source_file="res://sound/sneeky snukey Kalm 2.0.mp3"
+dest_files=[ "res://.import/sneeky snukey Kalm 2.0.mp3-15d454fd35a23767e803df828e1e2c34.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

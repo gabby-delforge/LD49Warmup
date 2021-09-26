@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sneeky snukey Panik 2.0.mp3-926f7490100ff28edf98c0296291aff3.mp3str"
+
+[deps]
+
+source_file="res://sound/sneeky snukey Panik 2.0.mp3"
+dest_files=[ "res://.import/sneeky snukey Panik 2.0.mp3-926f7490100ff28edf98c0296291aff3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
