@@ -12,8 +12,6 @@ func _ready():
 #  pass
 
 func _physics_process(delta):
-  print(player)
   var movement_vec = player.position - self.position
-  
   move_and_slide(movement_vec)
   

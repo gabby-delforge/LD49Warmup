@@ -30,5 +30,6 @@ script = ExtResource( 5 )
 [node name="NPC" parent="YSort" instance=ExtResource( 4 )]
 
 [node name="Destination" parent="YSort" instance=ExtResource( 7 )]
+position = Vector2( 280, -384 )
 
 [connection signal="_player_hit" from="YSort/Player" to="YSort/Player/Camera2D" method="_on_Player__player_hit"]
