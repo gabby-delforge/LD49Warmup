@@ -17,9 +17,11 @@
 
 [node name="Portal" parent="YSort" instance=ExtResource( 8 )]
 position = Vector2( -216, 112 )
+next_portal_path = NodePath("../Portal2")
 
 [node name="Portal2" parent="YSort" instance=ExtResource( 8 )]
 position = Vector2( -64, -472 )
+next_portal_path = NodePath("../Portal")
 
 [node name="Building" parent="YSort" instance=ExtResource( 3 )]
 
