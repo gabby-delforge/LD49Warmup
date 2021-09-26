@@ -5,6 +5,8 @@ signal _player_hit
 var last_movement: Vector2 = Vector2(1, 0)
 onready var sprite = $Sprite
 onready var hud = $"/root/Node2D/HUD"
+onready var audiokalm = $"/root/Node2D/AudioKalm"
+onready var audiopanik = $"/root/Node2D/AudioPanik"
 
 var is_seen_by_enemy = false
 var stealthiness = 100
@@ -17,8 +19,13 @@ func _ready():
 func _process(delta):
   if is_seen_by_enemy:
     stealthiness = max(0, stealthiness - 50 * delta)
+    audiopanik.volume_db = -6
+    audiokalm.volume_db = -80
   else: 
     stealthiness = min(100, stealthiness + 1 * delta)
+    audiopanik.volume_db = -80
+    audiokalm.volume_db = -6
+    
     
   hud.set_stealthiness(stealthiness)
   
