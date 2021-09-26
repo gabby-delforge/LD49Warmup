@@ -19,12 +19,12 @@ func _ready():
 func _process(delta):
   if is_seen_by_enemy:
     stealthiness = max(0, stealthiness - 50 * delta)
-    audiopanik.volume_db = -6
-    audiokalm.volume_db = -80
   else: 
     stealthiness = min(100, stealthiness + 1 * delta)
-    audiopanik.volume_db = -80
-    audiokalm.volume_db = -6
+  if stealthiness > 50:
+    audiopanik.volume_db = -1.48 * stealthiness + 68
+  else:
+    audiopanik.volume_db = -6
     
     
   hud.set_stealthiness(stealthiness)
