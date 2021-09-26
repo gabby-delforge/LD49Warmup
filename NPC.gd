@@ -31,7 +31,9 @@ func _physics_process(delta):
 func _on_Area_body_entered(body):
   if body == player:
     can_see_player = true
+    player.is_seen_by_enemy = true
 
 func _on_Area_body_exited(body):
   if body == player:
     can_see_player = false
+    player.is_seen_by_enemy = false
