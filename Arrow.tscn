@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://art/arrow.png" type="Texture" id=1]
+[ext_resource path="res://ArrowSprite.gd" type="Script" id=2]
+[ext_resource path="res://Arrow.gd" type="Script" id=3]
+[ext_resource path="res://fonts/YanoneKaffeesatz-Regular.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 4 )
+
+[node name="Arrow" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="ArrowSprite" type="Node2D" parent="."]
+scale = Vector2( 0.07, 0.06 )
+z_index = 100
+script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ArrowSprite"]
+margin_left = -1746.1
+margin_top = -163.03
+margin_right = -1246.1
+margin_bottom = -116.03
+rect_min_size = Vector2( 500, 10 )
+rect_scale = Vector2( 7, 7 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Example Text"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="ArrowSprite"]
+z_index = 100
+texture = ExtResource( 1 )
