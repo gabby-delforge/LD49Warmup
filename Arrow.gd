@@ -8,7 +8,7 @@ onready var viewport = get_tree().root
 
 # Change this value to increase or decrease how much space is between the arrow
 # and the edge of the screen.
-var margin = 30
+var margin = 50
 
 
 # Called when the node enters the scene tree for the first time.

@@ -39,8 +39,88 @@ position = Vector2( -64, -472 )
 next_portal_path = NodePath("../Portal")
 
 [node name="Building" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 464, -440 )
+scale = Vector2( 1.64507, 1.64507 )
+
+[node name="Building2" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( -312, -272 )
+
+[node name="Building3" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( -416, -1056 )
+scale = Vector2( 1.43283, 1.43283 )
+
+[node name="Building4" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 312, -1168 )
+
+[node name="Building5" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 312, 288 )
+
+[node name="Building6" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( -536, 680 )
+scale = Vector2( 2.05275, 2.05275 )
+
+[node name="Building7" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 1456, -536 )
+scale = Vector2( 2.05275, 2.05275 )
+
+[node name="Building8" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 1144, 552 )
+scale = Vector2( 2.05275, 2.05275 )
+
+[node name="Building9" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( -1384, -544 )
+scale = Vector2( 2.05275, 2.05275 )
+
+[node name="Building10" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 1128, -1664 )
+scale = Vector2( 2.05275, 2.05275 )
+
+[node name="Building11" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 2160, -1512 )
+scale = Vector2( 1.42871, 1.42871 )
+
+[node name="Building12" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 2360, -696 )
+scale = Vector2( 1.21878, 1.39658 )
+
+[node name="Building13" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 3560, -1128 )
+scale = Vector2( 3.14024, 3.07835 )
+
+[node name="Building14" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 2632, -2752 )
+scale = Vector2( 3.14024, 3.07835 )
+
+[node name="Building15" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 1144, -2808 )
+scale = Vector2( 2.00687, 1.96732 )
+
+[node name="Building16" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( -352, -2752 )
+scale = Vector2( 3.19674, 3.13374 )
+
+[node name="Building17" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 3216, 536 )
+scale = Vector2( 4.47546, 2.92936 )
+
+[node name="Building18" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 10408, -4552 )
+scale = Vector2( -21.9044, 25.2125 )
+
+[node name="Building19" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 1128, 7880 )
+scale = Vector2( -21.9044, 25.2125 )
+
+[node name="Building20" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( -7752, -4440 )
+scale = Vector2( -21.9044, 25.2125 )
+
+[node name="Building21" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 1992, -10224 )
+scale = Vector2( -21.9044, 25.2125 )
 
 [node name="Sprite" type="Sprite" parent="YSort"]
+visible = false
 position = Vector2( 384, -144 )
 scale = Vector2( 7, 5.875 )
 texture = ExtResource( 2 )
@@ -52,15 +132,66 @@ current = true
 script = ExtResource( 5 )
 
 [node name="NPC" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( -384, -200 )
+position = Vector2( 0, -856 )
+rotation = 3.14159
 
 [node name="Patrol1" type="Node2D" parent="YSort/NPC"]
-position = Vector2( 32, 32 )
+position = Vector2( 0, -248 )
 
 [node name="Patrol2" type="Node2D" parent="YSort/NPC"]
-position = Vector2( 24, 232 )
+position = Vector2( 0, 232 )
+
+[node name="NPC2" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 928, 16 )
+rotation = 1.5708
+
+[node name="Patrol1" type="Node2D" parent="YSort/NPC2"]
+position = Vector2( 0, -248 )
+
+[node name="Patrol2" type="Node2D" parent="YSort/NPC2"]
+position = Vector2( 0, 232 )
+
+[node name="NPC3" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1736, -2216 )
+rotation = 3.14159
+
+[node name="Patrol1" type="Node2D" parent="YSort/NPC3"]
+position = Vector2( 0, -1080 )
+
+[node name="Patrol2" type="Node2D" parent="YSort/NPC3"]
+position = Vector2( 0, 232 )
+
+[node name="NPC4" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 1744, -1376 )
+rotation = 6.28319
+
+[node name="Patrol1" type="Node2D" parent="YSort/NPC4"]
+position = Vector2( -0.000244141, -1536 )
+
+[node name="Patrol2" type="Node2D" parent="YSort/NPC4"]
+position = Vector2( 0, 232 )
+
+[node name="NPC5" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 880, -920 )
+rotation = 6.28319
+
+[node name="Patrol1" type="Node2D" parent="YSort/NPC5"]
+position = Vector2( -6.10352e-05, -192 )
+
+[node name="Patrol2" type="Node2D" parent="YSort/NPC5"]
+position = Vector2( 6.10352e-05, 40 )
+
+[node name="NPC6" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 632, -1080 )
+rotation = 3.14159
+
+[node name="Patrol1" type="Node2D" parent="YSort/NPC6"]
+position = Vector2( -6.10352e-05, -192 )
+
+[node name="Patrol2" type="Node2D" parent="YSort/NPC6"]
+position = Vector2( 6.10352e-05, 40 )
 
 [node name="Destination" parent="YSort" instance=ExtResource( 7 )]
-position = Vector2( 280, -384 )
+position = Vector2( 1696, -1296 )
 
 [connection signal="_player_hit" from="YSort/Player" to="YSort/Player/Camera2D" method="_on_Player__player_hit"]
