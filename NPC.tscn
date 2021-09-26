@@ -22,4 +22,12 @@ shape = SubResource( 1 )
 [node name="Polygon2D" type="Polygon2D" parent="."]
 position = Vector2( 64, -32 )
 color = Color( 1, 1, 1, 0.301961 )
-polygon = PoolVector2Array( -8, 32, 24, -72, -32, -96, -88, -80, -56, 32 )
+polygon = PoolVector2Array( -8, 32, 152, -160, -232, -160, -56, 32 )
+
+[node name="Area" type="Area2D" parent="Polygon2D"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Polygon2D/Area"]
+polygon = PoolVector2Array( -48, 32, -8, 32, 160, -160, -32, -152, -224, -152, -56, 32 )
+
+[connection signal="body_entered" from="Polygon2D/Area" to="." method="_on_Area_body_entered"]
+[connection signal="body_exited" from="Polygon2D/Area" to="." method="_on_Area_body_exited"]
