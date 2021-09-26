@@ -3,8 +3,6 @@ extends Control
 onready var destination: Destination = $"/root/Node2D/YSort/Destination"
 onready var player: Player = $"/root/Node2D/YSort/Player"
 
-
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
   pass # Replace with function body.
@@ -50,7 +48,6 @@ func _physics_process(delta):
 
   var player_pos = player.position
   var dest_pos = destination.position
-
 
   var a = Geometry.segment_intersects_segment_2d (player_pos, dest_pos - player_pos, bottom_right, top_right - bottom_right)
   var b = Geometry.segment_intersects_segment_2d (player_pos, dest_pos - player_pos, top_right, top_left - top_right)
