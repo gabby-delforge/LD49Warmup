@@ -1,4 +1,5 @@
 extends CanvasLayer
+class_name HUD
 
 onready var stealth_bar_fg = $StealthOMeter/StealthBarFG
 
