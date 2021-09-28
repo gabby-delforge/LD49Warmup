@@ -29,7 +29,7 @@ polygon = PoolVector2Array( -48, 32, -16, 32, 112, -104, 48, -136, -32, -152, -1
 
 [node name="View Wedge" type="Sprite" parent="."]
 modulate = Color( 0.964706, 0.839216, 0.466667, 1 )
-position = Vector2( 3, -145 )
+position = Vector2( -2.38419e-07, -144 )
 rotation = -0.0174533
 texture = ExtResource( 3 )
 

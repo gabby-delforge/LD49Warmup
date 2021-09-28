@@ -127,10 +127,6 @@ texture = ExtResource( 2 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 1 )]
 
-[node name="Camera2D" type="Camera2D" parent="YSort/Player"]
-current = true
-script = ExtResource( 5 )
-
 [node name="NPC" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 0, -856 )
 rotation = 3.14159
@@ -194,4 +190,10 @@ position = Vector2( 6.10352e-05, 40 )
 [node name="Destination" parent="YSort" instance=ExtResource( 7 )]
 position = Vector2( 1696, -1296 )
 
-[connection signal="_player_hit" from="YSort/Player" to="YSort/Player/Camera2D" method="_on_Player__player_hit"]
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+smoothing_enabled = true
+smoothing_speed = 10.0
+script = ExtResource( 5 )
+
+[connection signal="_player_hit" from="YSort/Player" to="Camera2D" method="_on_Player__player_hit"]

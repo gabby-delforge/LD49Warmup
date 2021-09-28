@@ -3,7 +3,7 @@ class_name Arrow
 
 onready var destination: Destination = $"/root/Node2D/YSort/Destination"
 onready var player: Player = $"/root/Node2D/YSort/Player"
-onready var hud: HUD = $"/root/Node2D/HUD"
+onready var hud = $"/root/Node2D/HUD"
 onready var viewport = get_tree().root
 
 # Change this value to increase or decrease how much space is between the arrow
@@ -22,7 +22,6 @@ func get_arrow_global_pos():
   
   var viewport = get_viewport().get_visible_rect()
   var viewport_size = viewport.size
-  
 
   var edge_margin = viewport_size*margin/1000
     

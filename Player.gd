@@ -23,6 +23,7 @@ func _process(delta):
     stealthiness = max(0, stealthiness - 50 * delta)
   else:
     stealthiness = min(100, stealthiness + 5 * delta)
+  
   if stealthiness > 50:
     audiopanik.volume_db = -1.48 * stealthiness + 68
   else:
